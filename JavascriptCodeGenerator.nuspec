@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>JavascriptCodeGenerator</id>
+    <version>2.0.0.0</version>
+    <authors>Omega software</authors>
+    <owners>Omega software</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pismohrana plugin for Rhetos</description>
+    <copyright>Copyright Omega software 2015</copyright>
+    <dependencies>
+      <dependency id="Rhetos.CommonConcepts" version="0.9.30" />
+      <dependency id="Rhetos.MvcModelGenerator" version="1.14.0" />
+      <dependency id="Rhetos.OmegaCommonConcepts" version="1.19.0" />
+      <dependency id="Rhetos.RestGenerator" version="1.10.0" />
+      <dependency id="Rhetos.TemplaterReport" version="1.12.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Rhetos, Version=0.9.30" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="\JavascriptCodeGenerator\bin\Debug\JavascriptModelGenerator.dll" target="Plugins" />
+    <file src="\JavascriptCodeGenerator\bin\Debug\JavascriptModelGenerator.pdb" target="Plugins" />
+
+    <file src="\JavascriptCodeGenerator\bin\Debug\Yahoo.Yui.Compressor.dll" target="Plugins" />
+    <file src="\JavascriptCodeGenerator\bin\Debug\EcmaScript.NET.dll" target="Plugins" />    
+  </files>
+</package>
