@@ -64,11 +64,12 @@ namespace JavascriptModelGenerator.Property
         {
             return string.Format(
 @"{{
+    ""field"": ""{3}"",
     ""title"": ""{0}"",
     ""type"": ""{1}"",
     {2}
 }}, 
-", CamelCaseTitle(name), propertyType, AdditionalPropertiesTag.Evaluate(info));
+", CamelCaseTitle(name), propertyType, AdditionalPropertiesTag.Evaluate(info), name);
         }
 
         public static string CamelCaseTitle(string prop)

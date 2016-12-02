@@ -60,6 +60,10 @@ namespace JavascriptModelGenerator.DefaultConcepts
     _{0}{1}.prototype.attributes = {{
 {6}
     }};
+
+    _{0}{1}.prototype.filters = [
+{7}
+    ];
 ",
                 info.Module.Name,
                 info.Name,
@@ -67,7 +71,8 @@ namespace JavascriptModelGenerator.DefaultConcepts
                 FieldsDescriptionsTag.Evaluate(info),
                 IDInitializer,
                 IDField,
-                AttributesTag.Evaluate(info));
+                AttributesTag.Evaluate(info),
+                FiltersTag.Evaluate(info));
         }
     }
 }

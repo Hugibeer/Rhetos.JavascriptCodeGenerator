@@ -237,6 +237,8 @@
     <Compile Include="DefaultConcepts\RowPermissionReadCodeGenerator.cs" />
     <Compile Include="DefaultConcepts\WritableOrmDataStructureCodeGenerator.cs" />
     <Compile Include="DefaultConcepts\WriteCodeGenerator.cs" />
+    <Compile Include="Filters\ComposableFilterByCodeGenerator.cs" />
+    <Compile Include="Filters\FilterByCodeGenerator.cs" />
     <Compile Include="IJavascriptModelGeneratorPlugin.cs" />
     <Compile Include="JavaScriptModelGenerator.cs" />
     <Compile Include="JavaScriptModelGeneratorModule.cs" />

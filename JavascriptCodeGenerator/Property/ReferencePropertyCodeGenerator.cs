@@ -19,7 +19,7 @@ namespace JavascriptModelGenerator.Property
         private string ImplementationDescriptionCodeSnippet(ReferencePropertyInfo info)
         {
             return string.Format(
-@"    ""lookupEntity"":""{0}/{1}"",
+@"    ""lookupEntity"":""{0}.{1}"",
 ", info.Referenced.Module, info.Referenced.Name);
 
         }

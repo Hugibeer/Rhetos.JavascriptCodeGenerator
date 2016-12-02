@@ -15,9 +15,9 @@ namespace JavascriptModelGenerator.DefaultConcepts
         public void GenerateCode(IConceptInfo conceptInfo, ICodeBuilder codeBuilder)
         {
             var info = (DataStructureInfo)conceptInfo;
-
-            codeBuilder.InsertCode(String.Format(@"""writable"":true,
-"), DataStructureCodeGenerator.AttributesTag, info);
+            if (info is IWritableOrmDataStructure)
+                codeBuilder.InsertCode(String.Format(@"""writable"":true,
+    "), DataStructureCodeGenerator.AttributesTag, info);
         }
     }
 }
